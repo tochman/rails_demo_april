@@ -19,6 +19,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'launchy'
 end
 
 group :development do

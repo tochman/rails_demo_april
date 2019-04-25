@@ -1,3 +1,5 @@
 <h1>Articles#index</h1>
-<p>The Muller report is out</p>
-<p>Spring hits Stockholm!</p>
+<% @articles.each do |article| %> 
+  <h1>  <%= article.title %> </h1>
+<% end %>
+
