@@ -2,4 +2,13 @@
 <% @articles.each do |article| %> 
   <h1>  <%= article.title %> </h1>
 <% end %>
+<%= @message unless @message.nil? %>
+
+
+<h1>Create a new article</h1>
+<%= form_with url: articles_path, local: true do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.submit %>
+<% end %>
 

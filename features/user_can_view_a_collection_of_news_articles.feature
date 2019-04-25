@@ -16,5 +16,4 @@ Feature: List articles on the index page
     When I visit the site
     Then I should see "The Redacted Muller report is out"
     And I should see "Summer hits Stockholm!"
-# Then show me the browser page
 
