@@ -1,6 +1,7 @@
 <h1>Articles#index</h1>
 <% @articles.each do |article| %> 
   <h1>  <%= article.title %> </h1>
+  <p>Written by: <%= article.author.name %></p>
 <% end %>
 <%= @message unless @message.nil? %>
 
